@@ -1,0 +1,150 @@
+article
+  header
+    .posttitle
+      margin-top: 0
+      margin-bottom: 0
+      text-transform: none
+      font-size: 2.3rem
+      line-height: 1.25
+
+    .meta
+      margin-top: 0
+      margin-bottom: 1rem
+
+    .meta *
+      color: $color-accent-3
+      font-size: .85rem
+
+    .author
+      text-transform: uppercase
+      letter-spacing: .01em
+      font-weight: 700
+
+    .postdate
+      display: inline
+
+  .content
+    h2:before
+      position: absolute
+      top: -4px
+      left: -1rem
+      color: $color-accent-1
+      content: "#"
+      font-weight: bold
+      font-size: 1.2rem
+
+    img
+    video
+      display: block
+      margin: auto
+      max-width: 100%
+      height: auto
+
+    /* http://webdesignerwall.com/tutorials/css-elastic-videos */
+    .video-container
+      position: relative
+      overflow: hidden
+      padding-top: (9 / 16 * 100)% // 16:9 ratio
+      height: 0
+
+      iframe, object, embed
+        position: absolute
+        top: 0
+        left: 0
+        margin-top: 0
+        width: 100%
+        height: 100%
+
+blockquote
+  position: static
+  font-family: font-serif
+  font-size: 1.1em
+  padding: 10px 20px 10px 54px
+  background: rgba(0,0,0,0.03)
+  border-left: 5px solid #ee6e73
+  &:before
+    top: 20px
+    left: -40px
+    content: "\f10d"
+    color: #e2e2e2
+    font-size: 32px;
+    font-family: FontAwesome
+    text-align: center
+    position: relative
+  footer
+    font-size: font-size
+    margin: line-height 0
+    font-family: font-sans
+    cite
+      &:before
+        content: "—"
+        padding: 0 0.5em
+.colorquote
+  position: relative;
+  padding: 0.1em 1.5em;
+  color: #4a4a4a;
+  margin-bottom: 1em;
+  &:before
+    content: " ";
+    position: absolute;
+
+    top: 50%;
+    left: -14.5px;
+    margin-top: -12px;
+    width: 24px;
+    height: 24px;
+
+    border-radius: 50%;
+    text-align: center;
+
+    color: white;
+    background-size: 16px 16px;
+    background-position: 4px 4px;
+    background-repeat: no-repeat;
+  &.info
+    border-color: hsl(204, 86%, 53%);
+    background-color: hsl(204, 86%, 93%);
+    &:before
+      background-color: hsl(204, 86%, 53%);
+      background-image: url("../images/info.svg");
+  &.success
+    border-color: hsl(141, 71%, 48%);
+    background-color: hsl(141, 70%, 88%);
+    &:before
+      background-color: hsl(141, 71%, 48%);
+      background-image: url("../images/check.svg");
+  &.warning
+    border-color: hsl(48, 100%, 67%);
+    background-color: hsl(48, 100%, 91%);
+    &:before
+      background-color: hsl(48, 100%, 67%);
+      background-image: url("../images/question.svg");
+  &.danger
+    border-color: hsl(348, 100%, 61%);
+    background-color: hsl(348, 100%, 85%);
+    &:before
+      background-color: hsl(348, 100%, 61%);
+      background-image: url("../images/exclamation.svg");
+
+.posttitle
+  text-transform: none
+  font-size: 1.5em
+  line-height: 1.25
+
+.article-tag
+  .tag-link
+    &:before
+      content: "#"
+    underline(10px, $color-link)
+
+.article-category
+  .category-link
+    underline(10px, $color-link)
+
+@media (min-width: 480px)
+  .article-tag,
+  .article-category
+    display: inline
+
+    &:before
+      content: "|"

@@ -1,0 +1,42 @@
+<% if (index) { %>
+    <% if (post.link) { %>
+        <a class="<%= class_name %>" href="<%- url_for(post.link) %>" target="_blank" itemprop="url"><%= post.title %></a>
+    <% } else if (post.title) { %>
+        <a class="<%= class_name %>" href="<%- url_for(post.path) %>"><%= post.title %></a>
+    <% } else { %>
+        <a class="<%= class_name %>" href="<%- url_for(post.path) %>">Untitled</a>
+    <% } %>
+
+    <% if (post.categories.length) { %>
+        <div class="article-tag">
+            <i class="fas fa-archive"></i>
+            
+            <%let num=1%>
+            <%post.categories.each(function(categories) { %>
+                <%if(num == post.categories.length){%>
+                    <a href="<%= url_for(categories.path) %>" style="font-weight: 900"><%= categories.name%></a>
+                <%}num+=1%>
+            <% })%>      
+        </div>
+    <% } %>
+
+    <% if (post.tags.length) { %>
+        <div class="article-tag">
+            <%let num=1%>
+            <% post.tags.each(function(tags) { %>
+                <%if(num <= post.tags.length){%>
+                    <i class="fas fa-tag">
+                        <a class="<%= class_name %>" href="<%= url_for(tags.path) %>"><%-tags.name  %></a>
+                    </i>
+                <%}num+=1%>
+            <% })  %>
+            </div>
+    <% } %>
+    
+
+<% } else { %>
+    <h1 class="<%= class_name %>" itemprop="name headline">
+        <%= post.title %>
+    </h1>
+<% } %>
+

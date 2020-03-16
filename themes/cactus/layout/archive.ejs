@@ -1,0 +1,32 @@
+<div id="archive">
+  <ul class="post-list">
+    <% var year = 0 %>
+    <% var change = false %>
+    <% var field_sort = theme.archive.sort_updated ? 'updated' : 'date' %>
+    <% page.posts.sort(field_sort, 'desc').each(function(post) { %>
+      <% var itemYear = date(post[field_sort], 'YYYY') - 0 %>
+      <% change = year !== itemYear %>
+      <% year = change ? itemYear : year %>
+      <% if (change) { %>
+        
+        <%let text= __('categories')%>
+        <% if (page.category) { %>
+          <%text=page.category%>
+          <h1 href="<%= url_for(page.path) %>"><i class="fa fa-archive"></i> <%=text %></h1>
+
+        <% }else if (is_tag()) { %>
+          <%text=page.tag%>
+          <h1 href="<%= url_for(page.path) %>"><i class="fas fa-tag"></i> <%=text %></h1>
+        <% } %>
+        <h2 style="padding-left: 15px; margin-top: 1rem;"><%-" ", year, "年"%></h2>
+        
+      <% } %>
+      <li class="post-item" style="margin-left: 2rem;">
+        
+        <%- partial('_partial/post/date', { post: post, class_name: 'meta' }) %>
+        <span><%- partial('_partial/post/title', { post: post, index: true, class_name: '' }) %></span>
+      </li>
+    <% }); %>
+  </ul>
+  <%- partial('_partial/pagination') %>
+</div>
