@@ -3,7 +3,7 @@ title: 如何將Json存入資料庫當中
 author: 春雨
 date: 2019-09-19 18:06:30
 tags: [SQL, Database]
-categories: [程式, SQL, 開坑]
+categories: [程式, DB]
 ---
 
 ## 有兩種解決的方法 ##

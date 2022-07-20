@@ -1,7 +1,7 @@
 ---
 title: Git experience with gitk
 author: 春雨
-categories: [程式, 專案管理]
+categories: [程式, Git]
 date: 2019-10-25 23:08:47
 tags: [git, gitk]
 ---

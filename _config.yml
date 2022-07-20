@@ -12,7 +12,7 @@ theme: cactus
 
 deploy:  
   type: git
-  repository: http://github.com/robinsonweng/robinsonweng.github.io.git
+  repository: git@github.com:robinsonweng/robinsonweng.github.io.git
   branch: master
 
 ##############################################################################
