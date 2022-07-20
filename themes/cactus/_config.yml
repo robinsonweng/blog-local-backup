@@ -40,7 +40,6 @@ nav:
 # only 'mail' is an exception.
 social_links:
   github: http://github.com/robinsonweng
-  twitter: https://twitter.com/robinsonweng
   mail: mailto:robinsonweng100@email.com
 
 # Customize the overview with displaying a tagcloud on the index page.
@@ -53,9 +52,9 @@ tags_overview: false
 #   - post_count: whether to show only the x most recent posts.
 #   - sort_updated: sort posts by last modification date instead of creation date.
 posts_overview:
-  show_all_posts: false
+  show_all_posts: true
   post_count: 10
-  sort_updated: true
+  sort_updated: false
 
 # Customize the archive view.
 # Options:
@@ -69,7 +68,7 @@ archive:
 # Options:
 #   - show_updated: show the last modification date.
 post:
-  show_updated: true
+  show_updated: false
 
 ##############################################################################
 # Look and Feel

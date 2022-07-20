@@ -6,14 +6,16 @@ date: 2019-10-06 14:47:33
 tags: [Python, classtoolkit]
 ---
 
-# 關於 Python's Class Development Toolkit 的重點整理
+## Python's Class Development Toolkit 的重點整理
 
 {% colorquote info %}
 `Raymond Hettinger` 一位常常出現在Python程式語言演講的大佬，曾經聽過他的`Transforming Code into Beautiful, Idiomatic Python` 聽過一次就愛上了他的演講風格，乾淨、簡潔、速度適中且幽默十足
 {% endcolorquote %}
 
 1. `__init__` is not a constructor:
-    - 我曾經在寫Python也有這個疑問，為甚麼Python的建構子是叫做`__init__`而不是`__constructor__`?而實際上確實不是，self是本身class的實作，也就是說在`__init__`宣告以前，class已經建構好了，他是一個`initializer`，任務是將影片中的Radius存入字典當中
+    - 我曾經在寫Python也有這個疑問，為甚麼Python的建構子是叫做`__init__`而不是`__constructor__`?而實際上確實不是，self是本身class的實作，也就是說在`__init__`宣告以前，class已經建構好了，他是一個`initializer`，任務是將影片中的Radius存入字典當中。
+    2022-1-9 update:
+    如果真的要說python的建構子，那可能是 __new__，他是真的在class建構以前就開始運行了，所以如果有段程式碼想要在 __init__ 以前運行，可以選擇 __new__
 
 2. `@classmethod`:
     - 如果我想要只呼叫一個method就可以達成:計算新的Radius同時更新到Class裡面，你可以在method中直接呼叫Class本身，但是這個舉動會導致繼承以後的method被影響，所以為了呼叫原class更新參數的當下又不會影響到繼承後的class，就是該使用 `@classmethod`中的cls參數來呼叫class的場合
