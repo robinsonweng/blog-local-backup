@@ -175,4 +175,4 @@ backup:
   theme: cactus
   message: the cactus backup for robinsonweng.github.io
   repository: 
-    github: git@github.com:robinsonweng/blog-local-backup.git
+    git@github.com:robinsonweng/blog-local-backup.git
