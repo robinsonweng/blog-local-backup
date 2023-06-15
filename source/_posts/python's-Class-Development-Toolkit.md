@@ -1,7 +1,7 @@
 ---
 title: Python's Class Development Toolkit 
 author: 春雨
-categories: [程式, Python, OOP]
+categories: [Python]
 date: 2019-10-06 14:47:33
 tags: [Python, classtoolkit]
 ---

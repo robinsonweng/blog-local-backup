@@ -3,11 +3,8 @@ layout: posts
 title: RESTful Service Best practice 2013
 tags:
   - RESTful
-  - http
 author: 春雨
-categories:
-  - Web
-  - 規範
+categories: [RESTful]
 date: 2022-01-08 13:08:47
 ---
 

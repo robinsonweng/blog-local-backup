@@ -1,7 +1,7 @@
 ---
 title: 用asyncio以前，你需要注意的事情
 author: 春雨
-categories: [程式, Coroutine]
+categories: ['Python']
 date: 2022-01-08 13:08:47
 tags: [corutine, asyncio]
 ---

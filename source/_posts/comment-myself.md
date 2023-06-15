@@ -1,7 +1,7 @@
 ---
 title: 評論以前的文章
 author: 春雨
-categories: [程式, 觀念]
+categories: [碎碎念]
 date: 2022-01-08 12:08:47
 tags: [思想]
 ---

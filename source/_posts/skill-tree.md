@@ -5,7 +5,7 @@ tags:
   - 程式
   - 數據分析
   - 思想
-categories: [程式, 觀念]
+categories: [碎碎念]
 date: 2019-09-26 20:32:08
 ---
 

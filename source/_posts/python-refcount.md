@@ -1,7 +1,7 @@
 ---
 title: Python的垃圾回收
 author: 春雨
-categories: ['python']
+categories: ['Python']
 date: 2022-07-31 13:15:49
 tags: ['c', 'python', 'garbage collect']
 ---

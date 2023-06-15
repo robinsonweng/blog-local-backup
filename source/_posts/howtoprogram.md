@@ -4,7 +4,7 @@ author: 春雨
 tags:
   - 學習
   - 思想
-categories: [程式, 觀念]
+categories: [碎碎念]
 date: 2019-09-23 19:31:49
 ---
 
