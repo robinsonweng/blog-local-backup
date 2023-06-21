@@ -14,3 +14,7 @@ tags:
 
 ## 聰明的缺點
 
+## 努力至上？
+Naval Ravikant 在他的 Joe Rogan Podcast 當中提到:
+> If you think hard work pay off, think about employee of your nabor's grocery store, the guy work in 8 hour's of day, work harder than you and me, how much outcome does he get? How you do, who you with, when you do it, way more important than hard work.
+在現在社會, 努力是可以透過好的決策來產出很大的槓桿的, 如果方法, 觀念不對, 產出來的成果自然也是很糟, 熱情和天賦在這句話面前, 顯的既濫俗又沒有深度.
