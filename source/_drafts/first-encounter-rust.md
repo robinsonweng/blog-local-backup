@@ -16,3 +16,83 @@ tags: ['rust']
 ## 強大的社群生態
 作為一個長期寫 python 的人來說, 沒有 package & environment manager 根本就是人間地獄, rust 的 cargo 幫我們從安裝套件, 管理專案, 環境設定, 甚至還可以[安裝插件](https://crates.io/crates/cargo-watch)來輔助開發
 
+## oop?
+
+## trait vs interface
+
+先上例子 1:
+```rust
+struct User {
+    nickname: String,
+    realname: String, 
+}
+
+impl Eq for User {
+    fn eq(&self, other: &Self) -> bool {
+        self.nickname == other.nickname ||
+        self.realname == other.realname
+    }
+}
+
+fn main() {
+    let user1 = User {
+        nickname: String("Andy"),
+        realname: String("Andy the bro"),
+    };
+
+    let user2 = User {
+        nickname: String("Tony"),
+        realname: String("Anthony"),
+    };
+
+    println!("Is user1 & user2 the same? {}", user1 == user2);
+}
+
+這種用法讓我想到 python 的 dunder method 像是 `__eq__`
+
+
+第二種用法
+```rust
+trait Move {}
+
+trait Bark {}
+
+trait Engine {}
+
+fn animal_move()
+where
+    Move + Bark
+{}
+
+fn car_move()
+where
+    Move + Engine
+{}
+
+```
+
+mixin: interface with implmented function body
+interface: interface with only function signature
+trait: Both is acceptable
+
+
+
+First the is-a relationship doesn’t always make sense: a dog might be a kind of mammal, a robot is not, but they both have move() operations. Prior to recent versions of Java that allowed default implementations in interfaces, you ended up copy and pasting code in this case.
+reddit.com/r/rust/comments/cn20vu/traits_vs_interfaces/
+
+
+
+```
+
+
+
+## 跨語言支援
+
+## unsafe rust
+
+## 邊界檢查
+c vs rust
+
+## 誰在用 rust?
+linux, discord, influxdb, turbopack, orjson
+
