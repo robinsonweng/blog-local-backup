@@ -16,7 +16,7 @@ date: 2023-10-07 14:45:51
 
 ## RFC 1459 & homework spec
 幾個我覺得很酷的地方:
-1. 語法這種東西居然有 [psuudo code](https://www.freecodecamp.org/news/what-are-bnf-and-ebnf/) 可以表示, 而且還不錯用, 後續如果要拿來寫 cli, 這個東東會非常非常好用。
+1. 語法這種東西居然有 [pseudo code](https://www.freecodecamp.org/news/what-are-bnf-and-ebnf/) 可以表示, 而且還不錯用, 後續如果要拿來寫 cli, 這個東東會非常非常好用。
 2. RFC 還是看得很不習慣, 很多東西都要細找, 重新看, 繞了不少圈
 3. Wireshark 我的神, 之前一直懶得裝, 後來受不了去撈包下來看, 至少不會一直想東想西了
 8. IRC 的規範不知道是我不適應 RFC, 還是很久沒更新了, 我到最後都沒搞清楚要怎麼知道哪些回覆要用哪種 prefix, 無可奈何之下只好用撈封包的方式來參考別人的作法。
