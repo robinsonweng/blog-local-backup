@@ -2,8 +2,9 @@
 title: Implment irc server in rust part 1
 author: 春雨
 tags:
-  - rust
-categories: [rust]
+  - Rust
+  - irc
+categories: [Rust]
 date: 2023-10-07 14:45:51
 ---
 
