@@ -1,10 +1,12 @@
 ---
 title: Implment irc server in rust part 1
 author: 春雨
-categories: ["rust"]
+tags:
+  - rust
+categories: 未分類
 date: 2023-10-07 14:45:51
-tags: ["rust"]
 ---
+
 
 原本是想要寫一個 DNS 的, 後來我朋友跟我推薦他學校的網路程式作業, 裡面就包含了 DNS, 所以想說乾脆就先從簡單的作業開始
 
