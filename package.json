@@ -3,10 +3,14 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "4.2.1"
+    "version": "5.0.0"
   },
   "dependencies": {
-    "hexo": "^4.2.1",
+    "constantinople": "^4.0.1",
+    "core-js": "^3.35.0",
+    "ejs": "^3.1.9",
+    "got": "^14.0.0",
+    "hexo": "^5.0.0",
     "hexo-browsersync": "^0.3.0",
     "hexo-deployer-git": "^2.1.0",
     "hexo-generator-archive": "^0.1.5",
@@ -24,7 +28,10 @@
     "hexo-renderer-scss": "^1.2.0",
     "hexo-renderer-stylus": "^0.3.3",
     "hexo-server": "^0.3.3",
+    "minimist": "^1.2.8",
     "node-sass": "^8.0.0",
-    "package.json": "^2.0.1"
+    "package.json": "^2.0.1",
+    "parse-url": "^8.1.0",
+    "uglify-js": "^3.17.4"
   }
 }
